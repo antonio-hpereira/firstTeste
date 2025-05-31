@@ -26,9 +26,11 @@ function verificarChute() {
         exibirTextoNaTela('p', mensagemTentativas);
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
+
         if (chute > numeroSecreto) {
             console.log("numero secreto", numeroSecreto)
             exibirTextoNaTela('p', 'O número secreto é menor');
+            
         } else {
             console.log("numero secreto", numeroSecreto)
             exibirTextoNaTela('p', 'O número secreto é maior que o tamanho da cabeça da Isabela quando ela nasceu e quase matou a mãe dela');
